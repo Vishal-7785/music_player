@@ -1,5 +1,10 @@
 module.exports.home = function(req,res){
-    return res.end
-    
-
+    return res.render('home',{
+        title: "Music player"
+    });
+}
+module.exports.begin = function(req,res){
+    return res.render('main',{
+        title: "Main Page"
+    })
 }

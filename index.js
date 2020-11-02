@@ -4,7 +4,7 @@ const port = 7000;
 // Set up view engine
 app.set('view engine','ejs');
 app.set('views','./views');
-
+app.use(express.static('assets'))
 app.use(express.urlencoded());
 // using express router
 app.use('/',require('./routes/index'));
