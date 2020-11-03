@@ -5,6 +5,7 @@ module.exports.signup = function(req,res){
     });
 }
 module.exports.create = function(req,res){
+    console.log('jhbjb');
     if(req.body.password != req.body.confirm_password){
         return res.redirect('back');
     }
@@ -22,4 +23,8 @@ module.exports.create = function(req,res){
             return res.redirect('back');
         }
     });
+}
+// Signing in and created a session
+module.exports.createSession = function(req,res){
+    return res.redirect('/home');
 }

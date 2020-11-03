@@ -5,7 +5,7 @@ passport.use(new LocalStrategy({
     usernameField: 'email'
 },function(email,password,done){
         // Find a user and establish the identity
-    User.findOne({emailL: email},function(err,user){
+    User.findOne({email: email},function(err,user){
         if(err){
             console.log('Error in finding user -->Passport');
             return done(err);
@@ -14,7 +14,7 @@ passport.use(new LocalStrategy({
             console.log('Invalid Username/Password');
             return done(null,false);
         }
-        return(null,user);
+        return done(null,user);
     });
 }
 ));
