@@ -7,6 +7,7 @@ const db = require('./config/mongoose');
 const session = require('express-session');
 const passport = require('passport');
 const passportLocal = require('./config/passport-local-strategy');
+const MongoStore = require('connect-mongo')(session);
 
 app.use(express.urlencoded());
 app.use(cookieParser());
@@ -14,6 +15,7 @@ app.use(cookieParser());
 app.set('view engine','ejs');
 app.set('views','./views');
 app.use(express.static('assets'))
+// mongo store is used to store the session cookie in the db
 app.use(session({
     name: 'music-player',
     // we have to change this secret key before deployment
@@ -22,7 +24,14 @@ app.use(session({
     resave: false,
     cookie: {
         maxAge: (1000*60*100)
+    },store: new MongoStore({
+        mongooseConnection: db,
+        autoRemove: 'disabled'
+    },function(err){
+        console.log('error connecting to mongostore');
     }
+    )
+
 }));
 // Here we are telling the app to use passport
 app.use(passport.initialize());
