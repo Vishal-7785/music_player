@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+    <link rel="stylesheet" href="/css/update.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="welcome">Welcome To Sky Beats</h1>
+           
+            <h2 class="login animate__animated animate__shake animate__infinite"> Update Your Info Here</h2>
+            <form action="/users/Update" enctype="multipart/form-data" method="POST">
+                <img id="username-logo" src="https://as2.ftcdn.net/jpg/02/15/13/95/500_F_215139565_gZ8F2mKkbnS8d90nbEOESqmrH6fk3eGZ.jpg" alt="">
+                <input class="user-name" type="text" name="name" placeholder="Update name" required>
+                <img id="password-logo" src="https://www.flaticon.com/svg/static/icons/svg/958/958519.svg" alt="">
+                <input class="password" type="email" name="email" placeholder="Update email" required>             
+                 <input  class="file-image" type="file" name="avatar" placeholder="Profile Picture">
+                <input id="signin-button" type="submit" value="Update">
+                        
+            </form>
+         
+        </div>
+    </body>
+</html>

@@ -19,7 +19,7 @@ body{
 .user-name{
     box-sizing: border-box;
     height:8%;
-    margin-top: -2%;
+    margin-top: 1%;
     margin-left:35%;
     font-size: 2rem;
     background-color: #14274e;
@@ -37,13 +37,13 @@ body{
     background-color: #14274e;
     color:#1a1c20;
     padding-left: 6%;
-    margin-top: 2%;
+    margin-top: 3%;
 }
 .password:hover{
     background-color: #f4abc4;
 }
 .login{
-    margin-left: 40%;
+    margin-left: 35%;
     font-size: 3rem;
     margin-top: -2%;
     color: #f8f1f1
@@ -53,7 +53,7 @@ body{
     height:7%;
     width:4%;
     margin-left: 35%;
-    margin-top: -2%;
+    margin-top: 1%;
     border-radius: 50%;
 }
 #password-logo{
@@ -62,7 +62,7 @@ body{
     height:7%;
     width:4%;
     margin-left: 35%;
-    margin-top: 2%;
+    margin-top: 3%;
     border-radius: 50%;
 }
 #signin-button{
@@ -102,4 +102,14 @@ body{
     font-size: 3rem;
     color: #f8f1f1;
     margin-left: 20%;
+}
+.file-image{
+    box-sizing: border-box;
+    height:8%;
+    width: 30%;
+    margin-left:35%;
+    font-size: 2rem;
+    background-color: #a20a0a;
+    color:#1a1c20;
+    margin-top: 3%;
 }

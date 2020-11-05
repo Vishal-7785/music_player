@@ -15,6 +15,8 @@ app.use(cookieParser());
 app.set('view engine','ejs');
 app.set('views','./views');
 app.use(express.static('assets'))
+
+app.use('/uploads',express.static(__dirname + '/uploads'));
 // mongo store is used to store the session cookie in the db
 app.use(session({
     name: 'music-player',

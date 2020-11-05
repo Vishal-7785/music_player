@@ -74,26 +74,21 @@ body{
     color:wheat
 }
 #statement{
-    margin-top: 2%;
+    margin-top: 3%;
     color:#f1f6f9;
     margin-left:28%;
     font-size: 3rem;
 }
-#guest-button{
-    margin-left: 38%;
-    font-size: 2rem;
-    background-color: #14274e;
-    color:white;
-}
+
 #sign-up{
     color:#a20a0a;
 }
 .google-sign-up{
-    height:8%;
+    height:10%;
     width: 40%;
     margin-left: 30%;
     border: 1px solid red;
-    margin-top: 2%;
+    margin-top: 5%;
     background-color: #1a1c20;
 }
 #google{
